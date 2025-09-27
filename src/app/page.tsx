@@ -7,7 +7,7 @@ export default function HomePage() {
       <p className="mt-4 text-lg">Explore my skills and projects below.</p>
 
       <div className="mt-6 space-x-4">
-        <Link
+        {/* <Link
           href="/skills"
           className="text-blue-600 hover:underline text-lg"
         >
@@ -18,7 +18,10 @@ export default function HomePage() {
           className="text-blue-600 hover:underline text-lg"
         >
           View Portfolio
-        </Link>
+        </Link> */}
+        <h1 className="text-4xl font-proxima">PROXIMA</h1>
+        <p className="font-helvetica">HELVETICA</p>
+
       </div>
     </main>
   );
