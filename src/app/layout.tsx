@@ -1,5 +1,6 @@
-import './globals.css';
+import './styles/globals.css';
 import type { Metadata } from 'next';
+import Header from './../../components/Header';
 
 export const metadata: Metadata = {
   title: 'My Portfolio',
@@ -9,7 +10,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        />
+      </head>
+      <body>
+        <Header />
+        <main className="pt-32">{children}</main>
+      </body>
     </html>
   );
 }

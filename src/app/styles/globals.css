@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Custom Font === */
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/fonts/ProximaNovaBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Design System Variables === */
+:root {
+  --font-proxima: 'ProximaNova', sans-serif;
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-chi-purple: #B4BEFF;
+  --color-chi-black: #171717;
+  --color-chi-white: #F8F8F8;
+}
+
+/* === Global Base === */
+body {
+  font-family: var(--font-proxima);
+  font-weight: 700;
+  background-color: var(--color-chi-white);
+  color: var(--color-chi-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* === Font Utilities === */
+.font-proxima {
+  font-family: var(--font-proxima);
+  font-weight: 700;
+}
+
+.font-helvetica {
+  font-family: var(--font-helvetica);
+  font-weight: 400;
+}
+
+/* === Color Utilities === */
+.text-chi-purple {
+  color: var(--color-chi-purple);
+}
+
+.text-chi-black {
+  color: var(--color-chi-black);
+}
+
+.text-chi-white {
+  color: var(--color-chi-white);
+}
+
+.bg-chi-purple {
+  background-color: var(--color-chi-purple);
+}
+
+.bg-chi-black {
+  background-color: var(--color-chi-black);
+}
+
+.bg-chi-white {
+  background-color: var(--color-chi-white);
+}
