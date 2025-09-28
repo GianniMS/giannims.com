@@ -1,25 +1,14 @@
 import './styles/globals.css';
-import type { Metadata } from 'next';
-import Header from './../../components/Header';
+import { ReactNode } from 'react';
 
-export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'A portfolio site built with Next.js 14',
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-        />
+        <title>Home | Getting the Undeniable Seen</title>
+        <meta name="description" content="Landing page" />
       </head>
-      <body>
-        <Header />
-        <main className="pt-32">{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
