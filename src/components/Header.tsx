@@ -20,7 +20,6 @@ export default function Header() {
         py-8
       "
     >
-      {/* Logo */}
       <Link href="/" className="pointer-events-auto">
         <Image
           src="/images/logo.svg"
@@ -31,7 +30,6 @@ export default function Header() {
         />
       </Link>
 
-      {/* Menu Icon */}
       <button
         className="pointer-events-auto"
         aria-label="Open menu"
