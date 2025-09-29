@@ -1,3 +1,4 @@
+import Header from '@/components/Header';
 import './styles/globals.css';
 import { ReactNode } from 'react';
 
@@ -8,7 +9,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <title>Home | Getting the Undeniable Seen</title>
         <meta name="description" content="Landing page" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
