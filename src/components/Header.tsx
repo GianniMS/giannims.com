@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header
       className="
-        absolute
+        fixed
         top-0
         left-0
         z-50

@@ -20,11 +20,12 @@
 }
 
 /* === Global Base === */
-body {
+html, body {
   font-family: var(--font-proxima);
   font-weight: 700;
   background-color: var(--color-chi-white);
   color: var(--color-chi-black);
+  overscroll-behavior: none;
   margin: 0;
   padding: 0;
 }
