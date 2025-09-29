@@ -20,7 +20,7 @@ export default function BackgroundLayer() {
             "
           >
             <Image
-              src="/images/chi-base.JPG"
+              src="/images/chi-layer.png"
               alt="Background Base"
               fill
               className="
@@ -28,7 +28,7 @@ export default function BackgroundLayer() {
                 scale-[1.6]
                 md:scale-[1.2]
                 lg:scale-[1.2]
-                xl:scale-100
+                xl:scale-[1]
                 object-[center_60%]
                 xl:object-[center_55%]
                 transition-transform

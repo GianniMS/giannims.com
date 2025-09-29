@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function BackgroundBase() {
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden">
+    <div className="absolute inset-0 z-1 overflow-hidden">
       <div
         className="
           relative w-full h-full
@@ -28,7 +28,7 @@ export default function BackgroundBase() {
             scale-[1.6]
             md:scale-[1.2]
             lg:scale-[1.2]
-            xl:scale-100
+            xl:scale-[1]
             object-[center_60%]
             xl:object-[center_55%]
             transition-transform
